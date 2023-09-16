@@ -39,10 +39,15 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 }
-
 .container{
   display: flex;
   justify-content: space-around;
+  padding: 20px;
+}
+.container2{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   padding: 20px;
 }
 @media (prefers-color-scheme: dark) {
