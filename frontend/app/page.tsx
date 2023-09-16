@@ -1,10 +1,12 @@
 import Image from 'next/image'
-import styles from './page.module.css'
-
+import styles from '@/styles/main.module.css'
+import banner from '@/public/banner.svg'
 export default function Home() {
   return (
-    <main className={styles.main}>
-      Главная страница
+    <main className={styles.container}>
+        <Image src={banner} alt="" className={styles.banner}/>
     </main>
   )
 }
+
+

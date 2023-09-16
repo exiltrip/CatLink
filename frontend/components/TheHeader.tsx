@@ -2,9 +2,12 @@ import Link from "next/link";
 
 const TheHeader = () => {
     return (
-        <header  className="container">
-            <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
+        <header  className="header">
+            <Link href="/" className="header__item header__title">🐈 CatLink</Link>
+            <div className="header__auth">
+            <Link href="/login" className="header__item">Логин</Link>
+            <Link href="/signin" className="header__item">Регистрация</Link>
+            </div>
         </header>
     );
 };
